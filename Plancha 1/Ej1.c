@@ -16,15 +16,15 @@ int main(){
   int b = (1 << 31) | (1 << 15);
   int c = -1 & 0xFFFFFF00;
   int d = 0xAA | (0xAA << 24);
-  int e = 5 << 100;
-  int f = -1 & (... (1 << 8));
+  int e = 5 << 8;
+  int f = -1 & (~ (1 << 8));
 
   printb(a);
   printb(b);
   printb(c);
   printb(d);
   printb(e);
-  //printb(f);
+  printb(f);
 
   return 0;
 }
