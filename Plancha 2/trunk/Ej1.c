@@ -27,15 +27,15 @@ void printb(int n){
 
 int main(){
 	int s, e, f;
-	
+
 	float p = -2.625;
-	
+
 	s = extSig(p);
 	e = extExp(p);
 	f = extFrac(p);
-	
+
 	printf("Por funcion:\nSigno: %i\nExponente: %i\nFracción: %d\n\n", s, e, f);
-	
+
 	union ieee754_float l;
   l.f = -2.625;
   
